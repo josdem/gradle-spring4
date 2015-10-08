@@ -66,7 +66,7 @@
 
 	<hr>
 	<footer>
-		<p>2015</p>
+		<p>&copy; josdem 2015</p>
 	</footer>
 </div>
 

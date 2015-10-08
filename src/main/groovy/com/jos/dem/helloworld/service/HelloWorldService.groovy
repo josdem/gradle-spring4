@@ -17,7 +17,7 @@ class HelloWorldService {
 
 	String getTitle(String name) {
 		log.debug "getTitle() is executed! name : ${name}"
-    "Hello World"
+    "Hello ${name}"
 	}
 
 }
