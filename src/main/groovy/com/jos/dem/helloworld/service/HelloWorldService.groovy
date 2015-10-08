@@ -1,33 +1,23 @@
-package com.jos.dem.helloworld.service;
+package com.jos.dem.helloworld.service
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
+import org.slf4j.Logger
+import org.slf4j.LoggerFactory
+import org.springframework.stereotype.Service
+import org.springframework.util.StringUtils
 
 @Service
-public class HelloWorldService {
+class HelloWorldService {
 
-	private static final Logger logger = LoggerFactory.getLogger(HelloWorldService.class);
+	Logger log = LoggerFactory.getLogger(this.class)
 
-	public String getDesc() {
-
-		logger.debug("getDesc() is executed!");
-
-		return "Gradle + Spring MVC";
-
+	String getDesc() {
+		log.debug "getDesc() is executed!"
+	  "Gradle + Spring MVC"
 	}
 
-	public String getTitle(String name) {
-
-		logger.debug("getTitle() is executed! $name : {}", name);
-
-		if(StringUtils.isEmpty(name)){
-			return "Hello World";
-		}else{
-			return "Hello " + name;
-		}
-
+	String getTitle(String name) {
+		log.debug "getTitle() is executed! name : ${name}"
+    "Hello World"
 	}
 
 }
